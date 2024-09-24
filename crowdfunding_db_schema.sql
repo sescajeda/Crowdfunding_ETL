@@ -1,7 +1,10 @@
-create table category(
-	category_id varchar(10) not null,
-	category varchar (20) not null,
-	primary key (category_id)
+drop table category cascade;
+drop table subcategory cascade;
+drop table contacts cascade;
+drop table campaign cascade;
+CREATE TABLE category (
+    category_id varchar(10) PRIMARY KEY NOT NULL ,
+    category varchar(50)   NOT NULL
 );
 
 create table subcategory(
